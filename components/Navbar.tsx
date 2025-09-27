@@ -68,14 +68,12 @@ export default function Navbar({ isMenuHover, isOpen, setIsOpen, isScroll }: Hea
                       ${isOpen ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-4 pointer-events-none"}
         `}>
           {menuItems.map((item, index) => (
-            <li key={index} className="text-black font-medium py-[16px] border-b border-b-[#ebebee]">
-              <Link href={item.href}>
+            <li key={index} className="text-black font-medium py-[16px] border-b border-b-[#ebebee] text-[20px] group">
                 <span className="flex justify-between items-center">{item.title}
                 {item.submenu && (
                     <ArrowSVG className="w-[18px] h-[18px] fill-current text-[#999999]" />
                 )}
                 </span>
-              </Link>
             </li>
           ))}
         </ul>

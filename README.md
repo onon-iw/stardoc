@@ -1,36 +1,68 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+### 기술스택
+- Next.js 15
+- TypeScript
+- React 19
 
-## Getting Started
+### Styling
+- Tailwind CSS v4
 
-First, run the development server:
+### 외부라이브러리
+ - Swiper
+   - 직접 구현하면 복잡하고 버그가 생기기 쉽기 때문에 시간절약, 안정성 떄문에 선택
+ - clx
+   - 조건부 클래스 관리가 용이하고 가독성이 좋고 동적 스타일링이 편해서 선택
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### 구현 및 미구현 
+1. 헤더
+- [v] 로고 및 병원명
+- [v] 네비게이션 메뉴 (모바일에서 햄버거 메뉴)
+- [ ] 전화번호 (클릭 시 전화 연결)
+- [ ] 플로팅 버튼
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. 메인 섹션
+- [v] 배경 이미지
+- [v] 메인 캐러셀
+- [ ] CTA 버튼 (진료예약, 상담문의)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. 병원 특징 섹션
+- [v] 4가지 주요 특징 카드 형태
+- [v] 아이콘 + 제목 + 설명
+- [v] 호버 효과 애니메이션
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. 의료진 소개
+- [ ] 의료진
+- [ ] 인사말 섹션
 
-## Learn More
+5. 진료과목 안내
+- [v] 카테고리별 서비스 분류
+- [v] 각 질환별 상세 정보
+- [v] 아이콘 및 시각적 구분
 
-To learn more about Next.js, take a look at the following resources:
+6. 시설 갤러리
+- [ ] 병원 내부 시설 이미지
+- [ ] 갤러리 모달 또는 슬라이더
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+7. 블로그 섹션
+- [ ] 최신 포스트 3-4개 표시
+- [ ] 제목, 요약, 발행일, 읽기 시간
+- [ ] "더 보기" 링크
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+8. 오시는길
+- [ ] 지도 이미지
+- [ ] 주소 및 연락처 정보
+- [ ] 대중교통 안내
+- [ ] 주차 정보
 
-## Deploy on Vercel
+9. 푸터
+- [ ] 병원 정보 및 사업자 정보
+- [ ] 개인정보처리방침 등
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 미구현 구현계획
+1. 전화번호 (클릭 시 전화연결)
+ - 디바이스 체크 후 모바일 일 경우 a태그에 href="tel:전화번호로" 구현예정
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+2. 플로팅 버튼
+ - ul-li 로 position:fixed로 구현예정
+
+3. 시설 갤러리
+ - Swiper를 사용해서 추가 옵션 중 coverflowEffect를 사용하여 구현예정

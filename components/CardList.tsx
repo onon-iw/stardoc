@@ -37,7 +37,6 @@ export default function CardList() {
                   alt="개인별 맞춤 진료"
                   fill
                   className={`object-cover md:object-center rounded`}
-                  priority
                   sizes={
                     cardIndex === 3
                     ? "(max-width: 768px) 100vw, 30vw"
@@ -87,7 +86,6 @@ export default function CardList() {
                   alt="1:1 전담 진료"
                   fill
                   className="object-cover md:object-center rounded"
-                  priority
                   sizes={
                     cardIndex === 3
                     ? "(max-width: 768px) 100vw, 30vw"
@@ -137,7 +135,6 @@ export default function CardList() {
                   alt="열려 있는 진료실"
                   fill
                   className="object-cover object-center rounded"
-                  priority
                   sizes={
                     cardIndex === 3
                     ? "(max-width: 768px) 100vw, 30vw"
@@ -187,7 +184,6 @@ export default function CardList() {
                   alt="발전하는 병원"
                   fill
                   className="object-cover object-center rounded"
-                  priority
                   sizes={
                     cardIndex === 3
                     ? "(max-width: 768px) 100vw, 30vw"

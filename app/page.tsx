@@ -4,8 +4,29 @@ import { CheckSVG } from "@/components/icons/icons";
 import SectionNav from "@/components/SectionNav";
 import Slider from "@/components/Slider/Slider";
 import { sectionSlides, slides } from "@/data/section";
+import { Metadata } from "next";
 import Image from "next/image";
 
+export async function generateMetadata(): Promise<Metadata> {
+  return {
+    title: "비뇨기과",
+    description: "비뇨기과 홈페이지입니다",
+    openGraph: {
+      title: "비뇨기과",
+      description: "비뇨기과 홈페이지입니다.",
+      type: "website",
+      url: "https://www.startdoctor.co.kr/",
+      images: [
+        {
+          url: "hhttps://www.startdoctor.co.kr/theme/ybusiness_1/img/main/main_02_01_01.png",
+          width: 445,
+          height: 278,
+          alt: "비뇨기과 이미지",
+        },
+      ],
+    },
+  };
+}
 
 export default function Home() {
   const sections = ["section-0", "section-1", "section-2", "section-3", "section-4", "section-5", "section-6"];
@@ -55,7 +76,6 @@ export default function Home() {
                 alt="배경이미지"
                 fill
                 className="object-cover object-bottom-right"
-                priority
               />
             </picture>
           </div>
@@ -83,7 +103,6 @@ export default function Home() {
                   alt="요로결석 이미지"
                   fill 
                   className="obejct-contain transition-opacity duration-300 group-hover:opacity-20"
-                  priority
                   sizes="(min-width: 768px) 23vw, 44vw"
                   />
               </div>
@@ -99,7 +118,6 @@ export default function Home() {
                   alt="정관수술 이미지"
                   fill
                   className="obejct-contain transition-opacity duration-300 group-hover:opacity-20"
-                  priority
                   sizes="(min-width: 768px) 23vw, 44vw"
                   />
               </div>
@@ -115,7 +133,6 @@ export default function Home() {
                   alt="남성수술 이미지"
                   fill
                   className="obejct-contain transition-opacity duration-300 group-hover:opacity-20"
-                  priority
                   sizes="(min-width: 768px) 23vw, 44vw"
                   />
               </div>
@@ -131,7 +148,6 @@ export default function Home() {
                   alt="여성 요실금 수술 이미지"
                   fill
                   className="obejct-contain transition-opacity duration-300 group-hover:opacity-20"
-                  priority
                   sizes="(min-width: 768px) 23vw, 44vw"
                   />
               </div>
@@ -147,7 +163,6 @@ export default function Home() {
                   alt="남성비뇨기과 이미지"
                   fill
                   className="obejct-contain transition-opacity duration-300 group-hover:opacity-20"
-                  priority
                   sizes="(min-width: 768px) 23vw, 44vw"
                   />
               </div>
@@ -163,7 +178,6 @@ export default function Home() {
                   alt="여성비뇨기과 이미지"
                   fill
                   className="obejct-contain transition-opacity duration-300 group-hover:opacity-20"
-                  priority
                   sizes="(min-width: 768px) 23vw, 44vw"
                   />
               </div>
@@ -189,7 +203,6 @@ export default function Home() {
                 width={425}
                 height={760}
                 className="obejct-contain"
-                priority
               />
             </div>
             <div className="relative z-10 md:w-[18vw]">
@@ -199,7 +212,6 @@ export default function Home() {
                 width={425}
                 height={760}
                 className="obejct-contain"
-                priority
               />
             </div>
           </div>
@@ -209,7 +221,6 @@ export default function Home() {
               alt="배경이미지"
               fill
               className="object-cover object-bottom-right"
-              priority
               />
           </div>
         </div>
@@ -262,16 +273,18 @@ export default function Home() {
             </FadeInUp>
           </div>
           <div className="w-full h-[100vh] relative md:px-0;">
-            <picture>
-              <source srcSet="/section-7-bg-m.png" media="(max-width: 768px)" />
               <Image
                 src="/section-7-bg.png"
                 alt="배경이미지"
                 fill
-                className="object-cover object-top"
-                priority
+                className="object-cover object-top hideen md:blokc"
               />
-            </picture>
+              <Image
+                src="/section-7-bg-m.png"
+                alt="배경이미지"
+                fill
+                className="object-cover object-top md:hidden block"
+              />
           </div>
         </div>
       </section>
