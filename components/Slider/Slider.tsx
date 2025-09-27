@@ -1,6 +1,7 @@
 "use client";
 
 import { Swiper, SwiperSlide } from "swiper/react";
+import type { Swiper as SwiperType } from "swiper";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -17,8 +18,8 @@ export default function Slider({
   navigation = false,
 }: SliderProps) {
 
-  const swiperRef = useRef<any>(null);
-  const [currentSlide, setCurrentSlide] = useState(1);
+  const swiperRef = useRef<SwiperType | null>(null);
+  const [currentSlide, setCurrentSlide] = useState<number>(1);
 
   const totalSlides = slides.length;
 
@@ -67,7 +68,7 @@ export default function Slider({
           </SwiperSlide>
         ))}
       </Swiper>
-      
+
       { navigation && (
         <div className="absolute bottom-4 left-1/2 -translate-x-1/2 -translate-y-1/2 items-center gap-4 text-white text-lg select-none z-20 md:flex hidden text-[clamp(12px,1vw,24px)]">
           <div

@@ -38,10 +38,10 @@ export default function Introduce() {
                 </div>
                 <h1 className="mb-[3vw] text-[clamp(28px,1vw,50px)] md:pl-[10vw] ">14년동안 유지중인 <span className="font-bold">서울지역 환자사랑, 愛</span></h1>
                 <div className="mb-[5vw] text-[clamp(14px,1vw,20px)] md:pl-[10vw] ">
-                    <p>"국내 최고의 병원에서 비뇨기과를 전공한 후, 연고도 없는 서울로 내려와</p>
+                    <p>&quot;국내 최고의 병원에서 비뇨기과를 전공한 후, 연고도 없는 서울로 내려와</p>
                     <p>지역민들과 함께 울고 웃으며 진료한 지 어느덧 14년이 되었습니다.</p>
                     <p>비뇨기과의원은 그동안 환자분들께 불편한 몸의 회복뿐만 아니라,</p>
-                    <p>이곳에 오길 잘했다는 흐뭇한 마음과 좋은 경험을 드리고자 항상 최선을 다해왔습니다."</p>
+                    <p>이곳에 오길 잘했다는 흐뭇한 마음과 좋은 경험을 드리고자 항상 최선을 다해왔습니다.&quot;</p>
                 </div>
                 <p className="font-bold mb-[3vw] text-[clamp(20px,1vw,32px)] border-b border-b-[#6c6c6c] md:pl-[10vw] md:block hidden">비뇨기과의원은 믿을을 드리기 위해 노력하겠습니다.</p>
                 <ul className="md:px-[10vw]">

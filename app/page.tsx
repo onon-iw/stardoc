@@ -53,10 +53,10 @@ export default function Home() {
             </FadeInUp>
             <FadeInUp>
               <div className="md:mb-[5vw] text-[clamp(12px,1vw,20px)] md:pl-[10vw] mb-[25vw]">
-                <p>"국내 최고의 병원에서 비뇨기과를 전공한 후, 연고도 없는 서울로 내려와</p>
+                <p>&quot;국내 최고의 병원에서 비뇨기과를 전공한 후, 연고도 없는 서울로 내려와</p>
                 <p>지역민들과 함께 울고 웃으며 진료한 지 어느덧 14년이 되었습니다.</p>
                 <p>비뇨기과의원은 그동안 환자분들께 불편한 몸의 회복뿐만 아니라,</p>
-                <p>이곳에 오길 잘했다는 흐뭇한 마음과 좋은 경험을 드리고자 항상 최선을 다해왔습니다."</p>
+                <p>이곳에 오길 잘했다는 흐뭇한 마음과 좋은 경험을 드리고자 항상 최선을 다해왔습니다.&quot;</p>
               </div>
             </FadeInUp>
             <p className="font-bold mb-[3vw] text-[clamp(20px,1vw,32px)] border-b border-b-[#6c6c6c] md:pl-[10vw] md:block hidden">비뇨기과의원은 믿을을 드리기 위해 노력하겠습니다.</p>
@@ -227,7 +227,7 @@ export default function Home() {
       </section>
       <section id="section-6">
         <div className="w-full relative">
-          <div className="absolute z-10 text-white md:right-0 md:pt-[15vw] px-[3vw] pt-[12vw]">
+          <div className="absolute z-10 text-white md:right-0 md:pt-[10vw] px-[3vw] pt-[15vw]">
             <FadeInUp>
               <div className="md:mb-[7vw] md:pr-[5vw] mb-[15vw]">
                 <p className="text-[clamp(8px,1vw,12px)] tracking-[3px] md:mb-[2vw] mb-[5vw]">UROLOGY CLINIC</p>
